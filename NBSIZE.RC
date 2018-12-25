@@ -1,0 +1,32 @@
+/*********************************************************************
+ *                                                                   *
+ * MODULE NAME :  nbsize.rc              AUTHOR:  Rick Fishman       *
+ * DATE WRITTEN:  11-28-92                                           *
+ *                                                                   *
+ * DESCRIPTION:                                                      *
+ *                                                                   *
+ *  Resource file for NBSIZE.EXE.                                    *
+ *                                                                   *
+ * HISTORY:                                                          *
+ *                                                                   *
+ *  11-28-92 - Source copied from the NBBASE.EXE sample              *
+ *                                                                   *
+ *  Rick Fishman                                                     *
+ *  Code Blazers, Inc.                                               *
+ *  4113 Apricot                                                     *
+ *  Irvine, CA. 92720                                                *
+ *  CIS ID: 72251,750                                                *
+ *                                                                   *
+ *********************************************************************/
+
+#include <os2.h>
+#include "nbsize.h"
+
+ICON ID_NBWINFRAME nbsize.ico
+
+rcinclude nbsize.dlg
+
+/*********************************************************************
+ *                    E N D   O F   S O U R C E                      *
+ *********************************************************************/
+

@@ -1,0 +1,42 @@
+NBSIZE.EXE is a sample program that demonstrates a technique for resizing the
+pages of a Notebook control when the size of the Notebook changes. This program
+is comprised of 4 modules:
+
+ NBSIZE.C:  Main module that provides Notebook functionality
+ DIALOG.C:  Loads a dialog, associates it with a notebook page, and contains
+            the dialog box window procedure as well as the dynamic sizing
+            logic.
+ CLIENT.C:  Creates a standard window and associates it with a notebook page.
+            Processes the WM_PAINT message and uses a scalable font to display
+            a string. The size of the font changes as the page is sized.
+ MLE.C:     Creates an MLE control and associates it with a notebook page. It
+            is automatically sized when the notebook page sizes.
+
+All the pages rely on BKA_AUTOPAGESIZE to dynamically size their windows. The
+three pages size themselves differently in response to the notebook getting
+resized. The dialog box resizes its controls for optimum space. The client
+window resizes its scalable font. The MLE resizes itself to the size of the
+page.
+
+I unfortunately did not have a lot of time to document this program but you
+should be able to follow it if you have followed NBEZ.EXE or NBBASE.EXE.
+
+I hope this program will be of some use.
+
+===============================================================================
+GLOBAL HISTORY (KEPT SINCE 1/31/93 - Before that, kept on a per-module basis)
+
+2-22-93 - Got rid of wasted space on the bottom of the notebook when no minor
+          tabs were being used. Did this by setting the dimensions of the minor
+          tabs to 0, 0. This based on a tip by Scott Kliger.
+
+===============================================================================
+
+Rick Fishman
+Code Blazers, Inc.
+4113 Apricot
+Irvine, CA 92720
+
+CIS ID: 72251,750
+
+
